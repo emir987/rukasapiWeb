@@ -1,0 +1,44 @@
+.bg-pet{
+    background-color: #959313;
+}
+
+.vl{
+    border-left: 2px solid #3f4141;
+    height: 110%;
+}
+.h-100-custom{
+    height: 410px;
+}
+
+#btnFavSitter{
+    border-radius: 50%;
+}
+
+.font-size{
+    font-size: 11pt;
+}
+.border-dotted{
+    border-style: dotted;
+}
+.border-10{
+    border-style:solid;
+    border-width: 10px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+#footerText {
+
+    position: absolute;
+    bottom: -3px;
+
+}
+
+@media (max-width: 576px) {
+#footerText {
+    position: absolute;
+    bottom: -10px !important;
+}
+}
+

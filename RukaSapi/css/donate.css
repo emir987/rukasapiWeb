@@ -1,0 +1,139 @@
+/* Style the form */
+
+/* Style the input fields */
+input{
+    padding: 8px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+select{
+    padding: 8px 4px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #4CAF50;
+}
+
+
+
+
+.hrana,
+.novac {
+    height: 130px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #dedede;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hrana-text,
+.novac-text {
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+
+.donate-info {
+    border: .5px dashed rgba(105, 105, 219, 0.616);
+    height: 100%;
+}
+
+.odabrano {
+    border: 1px solid rgba(98, 175, 53, 0.493);
+    height: 100%;
+    padding: 10px;
+}
+
+.donate-section {
+    background-color: rgba(164, 187, 209, 0.678);
+    margin: 5px 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 1px rgba(139, 146, 171, 0.22);
+    align-items: center;
+}
+
+.donate-section div {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-shadow: .5px .5px black;
+    max-width: 470px;
+}
+
+.donate-section input {
+    min-width: 100px;
+    height: 60%;
+}
+
+#predmeti-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#hrana-info {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 991px) {
+    .donate-section {
+        flex-direction: column;
+    }
+    .donate-section div{
+        flex-direction: column;
+    }
+
+    .select-donate{
+        display: flex;
+    }
+
+    .select-donate >div{
+        width: 100%;
+        margin: 20px;
+    }
+}
+
+.invalid-input{
+    border: 1px solid red;
+}
